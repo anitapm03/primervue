@@ -1,20 +1,18 @@
 <template>
-  <HomeComponent />
-  <MusicaComponent />
-  <CineComponent />
+  <MenuComponent/>
+  <hr/>
+  <router-view></router-view>
+  <hr/>
 </template>
 
 <script>
+import MenuComponent from './components/MenuComponent.vue'
 //import HelloWorld from './components/HelloWorld.vue'
-//import HolaMundo from './components/HolaMundo.vue'
-import MusicaComponent from './components/Musica.vue'
-import CineComponent from './components/Cine.vue'
-import HomeComponent from './components/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    MusicaComponent, CineComponent, HomeComponent
+    MenuComponent
   }
 }
 </script>
